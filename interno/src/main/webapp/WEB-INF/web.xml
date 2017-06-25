@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>interno</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+
+  </welcome-file-list>
+  <filter>
+    <display-name>filter</display-name>
+    <filter-name>filter</filter-name>
+    <filter-class>interno.filter.filter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>filter</filter-name>
+    <url-pattern>/filter</url-pattern>
+  </filter-mapping>
+  
+    <error-page>
+    <error-code>404</error-code>
+    <location>/erro404.jsp</location>
+  </error-page>
+</web-app>
